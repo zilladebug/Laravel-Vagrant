@@ -1,0 +1,188 @@
+HOMESTEAD - Laravel Homestead is an official, pre-packaged Vagrant box 
+Service providers
+ORM Eloquent
+MVC Frameworks
+MIX : for styling
+- CRUD
+
+CTRL+K+C - comment out
+
+SOURCE:https://www.w3schools.in/laravel-tutorial/application-directory-structure/
+
+--APP DIRECTORY
+Core directory of the application
+For the *models* files
+	#CONSOLE
+	Artisan commands
+	#EXCEPTIONS
+	Holds your laravel project's exception handling files, 
+	which handles all the exceptions thrown by your Laravel project.
+	#HTTP
+	In here goes the different filters, requests and controllers.
+	#PROVIDERS
+	For different service providers
+
+--BOOSTRAP
+Contains all the bootstrapping scripts for the application
+
+--CONFIG
+All the configuration files
+
+--DATABASE
+For the database files
+
+--RESOURCES
+Sass files, language, files, templates...
+
+--ROUTES
+Contain all your definition files for routing such as console.php, api.php, channels.php, etc.
+
+--PUBLIC
+Contains the JS, CSS files, images, .htaccess, index, web.config..
+
+--STORAGE
+Session files, cache,compiled templates, misc...
+
+--VENDOR
+Composer and dependency files
+
+GITBASH - TINKER
+php artisan tinker
+
+LINKS:
+https://stackoverflow.com/questions/34545641/php-artisan-makeauth-command-is-not-defined
+https://laravel.com/docs/7.x/homestead
+DB - https://www.quora.com/How-do-I-show-column-names-in-MySQL
+	SHOW DATABASES;
+	USE DATABASE;
+	SHOW TABLES;
+	SHOW COLUMNS FROM TABLE;
+
+DOWNLOAD
+- delete .vagrant folder
+- edit Homestead.yaml to the correct path (example :: 
+        map: C:\xampp\htdocs\janedoe )
+- edit name at the bottom to the correct machine
+- edit hostname to the same name
+- the machine cant exist!
+- run vagrant up and then vagrant ssh
+
+vagrant box add laravel/homestead
+git clone https://github.com/laravel/homestead.git ~/Homestead
+cd ~/Homestead
+bash init.sh
+Make some changes to Homestead.yaml adding a custom domain and the folder mapping.
+vagrant up
+
+ERRORS
+change machine name in homestead.yaml and the "url" for the folders map
+vagrant Class 'BeyondCode\DumpServer\DumpServerServiceProvider' not found
+	run: composer dump-autoload
+php artisan storage: link
+	error: run Gitbash as admin, navigate to folder, run vagrant up and then the php artisan..
+
+Database does exist, when using phpunit and id already exist
+	- remove   <server name="DB_CONNECTION" value="sqlite"/> from phpunit.xml and add
+	 <server name="DB_DATABASE" value="test"/> and also in database.php add
+	 'test' => [
+         
+            'database' => 'test',
+        ],
+same fix for this error  $response->assertStatus(200), when running the
+phpunit ./tests/Feature/ShowRoomsControllerTest.php
+
+
+
+UPLOAD
+try to also run: vagrant reload
+
+- change the folder URL in the homestead.yaml file
+- run vagrant reload. Which reloads and rebuilds the vagrant box
+- php artisan migrate:fresh --seed (runs all the migrations for the database)
+- composer install, installing all the realted files etc.
+- homestead and vagrant
+
+MAILHOG
+
+THERE IS NO EXISTING STORAGE..OG OGSÅ FOR ALT ANDET INCL. MAILHOG :D
+Do this :
+	php artisan route:clear
+
+	php artisan config:clear
+
+	php artisan cache:clear
+
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /home/vagrant/code/artisan queue:work --sleep=3 --tries=3
+autostart=true
+autorestart=true
+user=vagrant
+numprocs=4
+redirect_stderr=true
+stdout_logfile=/home/vagrant/code/worker.log
+
+sudo nano /etc/supervisor/conf.d/laravel-workers.conf
+
+sudo supervisorctl reread
+
+sudo supervisorctl update
+
+sudo supervisorctl start laravel-worker:*
+
+CTRL+SHIFT+X
+remember to paste it in and hit enter
+then exit
+
+* * * * * cd /home/vagrant/code && php artisan schedule:run >> /dev/null 2>&1
+
+ERROR MEGA
+https://stackoverflow.com/questions/33186123/npm-install-errors-on-vagrant-homestead-windows-eproto-protocol-error-symlink
+
+
+npm install --no-bin-links
+https://github.com/npm/npm/issues/7308
+
+npm install --save-dev cross-env
+https://medium.com/@code4mk/npm-run-dev-issue-laravel-5-4-mix-9828f08c3190
+
+npm dev error
+RUN GITBASH AND VM BOX AS ADMIN!!
+and replace package with: https://github.com/laravel/laravel/blob/master/package.json
+Step1: composer update
+Step2: rm -rf node_modules
+(Step3: npm cache clean)
+Step4: npm install
+Step5: npm outdated
+
+Step6: npm install
+Step7: npm run dev
+
+npm uninstall --save-dev sass-loader
+npm install --save-dev sass-loader@7.1.0
+
+npm install nodemon --save-dev
+
+Kørte ikke den her igennem,men efter det og jeg lukkede den ned, virkede det.....
+composer require laravel/ui --dev
+php artisan ui vue --auth 
+npm install 
+npm run dev
+https://stackoverflow.com/questions/60357186/how-can-i-fix-error-npm-run-dev-in-laravel-6
+
+Du bruger Vagrant eller Docker til at skabe et udviklingsmiljø som kan 
+deles mellem andre og efterligne det miljø som dit projekt skal deployes på. 
+Det har ikke noget at gøre med Laravel specifikt, men det er en moderne måde at 
+opretholde et lokalt udviklingsmiljø uden at skulle installere XAMP/WAMP/MAMP/SLAM på din lokale maskine.
+
+Laravel not responding to scss
+add // Variables
+@import 'variables'; to the top in app.scss
+
+npm run watch-poll - while you edit the _variable.scss file, it auto updates the content on the website!
+
+1234@gmail.com
+12345678
+
+mail@gmail.com
+12345678

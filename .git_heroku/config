@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "heroku"]
+	url = https://git.heroku.com/guarded-reaches-81700.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "origin"]
+	url = https://git.heroku.com/guarded-reaches-81700.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
