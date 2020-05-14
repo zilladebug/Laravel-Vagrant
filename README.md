@@ -9,7 +9,7 @@
 
 ## HOTEL RESERVATION DEMO
 :star:
-[Zilladebug] <br/><br/> A <b>Laravel v7<b>, hotel reservation demo system. Including <b>CRUD</b> and <b>Laravel Eloquent.</b> 
+[Zilladebug] <br/><br/> A Laravel v7, hotel reservation demo system. Including <b>CRUD</b> and <b>Laravel Eloquent.</b> 
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. <br/>
 <br/>
     <b>Includes:</b> email verification, login system, user authentication,
