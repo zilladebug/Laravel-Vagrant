@@ -29,7 +29,7 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
     <br/>Example of the path:
             /c/xampp/htdocs/janedoe/
             
-- `Run composer create-project --prefer-dist laravel/laravel` [choose name for laravel directory]
+- Run `composer create-project --prefer-dist laravel/laravel` [choose name for laravel directory]
 
 - `cd:/ into the new laravel directory`
 
