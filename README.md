@@ -12,14 +12,14 @@
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. <br/>
 <br/>
     <b>Incl:</b> email verification, login system, user authentication, 
-    image upload on a reservation, service providers, MailGun
+    image upload on a reservation, service providers, mailgun, and much more!
 
 ## REQUIREMENTS
 
-Vagrant | https://www.vagrantup.com/downloads.html <br/>
-Virtual Machine Box | https://www.virtualbox.org/wiki/Downloads <br/>
+<b>Vagrant</b> | https://www.vagrantup.com/downloads.html <br/>
+<b>Virtual Machine Box</b> | https://www.virtualbox.org/wiki/Downloads <br/>
     - Those are required to run Homestead <br/>
-GitBash | https://git-scm.com/download/win <br/>
+<b>GitBash</b> | https://git-scm.com/download/win <br/>
 
 ## INSTALLING HOMESTEAD BOX 
 - Create a new [directory]. The name of the folder, will be the 
