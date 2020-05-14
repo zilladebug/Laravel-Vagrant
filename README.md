@@ -26,7 +26,7 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
   name of the VirtualMachine Box.
   
 - Open up GitBash and navigate to the new [directory]. <br/> But dont cd:/ into the directory yet.
-    Example of path:
+    <br/>Example of the path:
             /c/xampp/htdocs/janedoe/
             
 - `Run composer create-project --prefer-dist laravel/laravel` [choose name for laravel directory]
