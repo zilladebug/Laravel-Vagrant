@@ -22,10 +22,10 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 <b>GitBash</b> | https://git-scm.com/download/win <br/>
 
 ## INSTALLING HOMESTEAD BOX 
-- Create a new [directory]. The name of the folder, will be the 
+- Create a `new [directory]`. The name of the folder, will be the 
   name of the VirtualMachine Box.
   
-- Open up GitBash and navigate to the new [directory]. But dont cd:/ into the directory yet.
+- Open up GitBash and navigate to the new [directory]. <br/> But dont cd:/ into the directory yet.
     Example of path:
             /c/xampp/htdocs/janedoe/
             
