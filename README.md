@@ -11,8 +11,8 @@
 [Zilladebug] <br/><br/> A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. <br/>
 <br/>
-    <b>Includes:</b> email verification, login system, user authentication, <br/>
-    image upload on a reservation, service providers, mailgun, and much more!
+    <b>Includes:</b> email verification, login system, user authentication,
+    image upload on a reservation, <br/>service providers, mailgun, and much more!
 
 ## REQUIREMENTS
 
