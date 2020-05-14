@@ -68,4 +68,31 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 - Run both `vagrant up` and `vagrant ssh`
 - Pass this `http://homestead.test/` in your browser and see if it worked!   
 
+## TIPS IF YOU GET STUCKED!
+- Run GitBash and your virtual machine as administrator
 
+    ```
+    <b>Npm install wont work<b>: use this npm install --no-bin-links and also npm install --save-dev cross-env
+    
+    <b>Npm dev error<b>:
+        Replace package.json with: https://github.com/laravel/laravel/blob/master/package.json
+            Step1: composer update
+            Step2: rm -rf node_modules
+            (Step3: npm cache clean)
+            Step4: npm install
+            Step5: npm outdated
+            Step6: npm install
+            Step7: npm run dev
+            
+    <b>Missing laravel/ui:<b> 
+            composer require laravel/ui --dev
+            php artisan ui vue --auth 
+            npm install 
+            npm run dev
+            
+     <b>allround good practice<b>:
+            php artisan route:clear
+	        php artisan config:clear
+	        php artisan cache:clear
+         
+    ```
