@@ -18,13 +18,13 @@
 - Create a new [directory]. The name of the folder, will be the 
   name of the VirtualMachine Box.
   
-- Open up GitBash and navigate to the new [directory]. But dont cd:/ into yet.
-    The path would be:
+- Open up GitBash and navigate to the new [directory]. But dont cd:/ into the directory yet.
+    Example of path:
             /c/xampp/htdocs/janedoe/
             
 - Run composer create-project --prefer-dist laravel/laravel [choose name for laravel directory]
 
-- cd:/ into the new project folder
+- cd:/ into the new laravel directory
 
 - Run composer require laravel/homestead --dev 
   (if you already have a Homestead Box from previous projects, adding the -dev solves that)
