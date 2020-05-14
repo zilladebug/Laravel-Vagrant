@@ -7,12 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+:star: Zilladebug!
+[Zilladebug](https://www.zilladebug) A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
+Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. 
+    Incl: email verification, login system, user authentication, 
+    image upload on a reservation, service providers, MailGun
+
 ## REQUIREMENTS
 
-- VAGRANT | https://www.vagrantup.com/downloads.html
-- VIRTUAL MACHINE BOX | https://www.virtualbox.org/wiki/Downloads
+Vagrant | https://www.vagrantup.com/downloads.html
+Virtual Machine Box | https://www.virtualbox.org/wiki/Downloads
     - Those are required to run Homestead
-- GITBASH | https://git-scm.com/download/win
+GitBash | https://git-scm.com/download/win
 
 ## INSTALLING HOMESTEAD BOX 
 - Create a new [directory]. The name of the folder, will be the 
@@ -22,24 +28,27 @@
     Example of path:
             /c/xampp/htdocs/janedoe/
             
-- Run composer create-project --prefer-dist laravel/laravel [choose name for laravel directory]
+- `Run composer create-project --prefer-dist laravel/laravel` [choose name for laravel directory]
 
-- cd:/ into the new laravel directory
+- `cd:/ into the new laravel directory`
 
-- Run composer require laravel/homestead --dev 
-  (if you already have a Homestead Box from previous projects, adding the -dev solves that)
+- Run `composer require laravel/homestead --dev` 
+  (With the --dev you can run multiple homestead boxes, in the same VirtualMachine Box)
   
-- Run vendor\\bin\\homestead make
+- Run `vendor\\bin\\homestead make`
 
-- Run both vagrant up and vagrant ssh 
-- Pass this http://homestead.test/ in your browser and see if it worked!
+- Run both `vagrant up` and `vagrant ssh`
+- Pass this `http://homestead.test/` in your browser and see if it worked!
+    The name of the path is visible in the Homestead.yaml file at `map: homestead.test`
 
 ## First time running Homestead - CHOOSE A VIRTUAL MACHINE 
 - Choose one of these options:
-    1) hyperv
-    2) parallels
-    3) virtualbox - choose this if you have VirtualMachine Box
-    4) vmware_desktop
+```
+    1. hyperv
+    2. parallels
+    3. virtualbox - choose this if you have VirtualMachine Box
+    4. vmware_desktop
     
-
+    continue the installation process as mentioned above
+```
 
