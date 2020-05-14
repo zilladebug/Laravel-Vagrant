@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-:star: Zilladebug!
+:star:
 [Zilladebug](https://www.zilladebug) A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. 
     Incl: email verification, login system, user authentication, 
@@ -15,10 +15,10 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 
 ## REQUIREMENTS
 
-Vagrant | https://www.vagrantup.com/downloads.html
-Virtual Machine Box | https://www.virtualbox.org/wiki/Downloads
+Vagrant | https://www.vagrantup.com/downloads.html <br/>
+Virtual Machine Box | https://www.virtualbox.org/wiki/Downloads <br/>
     - Those are required to run Homestead
-GitBash | https://git-scm.com/download/win
+GitBash | https://git-scm.com/download/win <br/>
 
 ## INSTALLING HOMESTEAD BOX 
 - Create a new [directory]. The name of the folder, will be the 
@@ -43,12 +43,12 @@ GitBash | https://git-scm.com/download/win
 
 ## First time running Homestead - CHOOSE A VIRTUAL MACHINE 
 - Choose one of these options:
+  After this, continue the installation process as mentioned above
 ```
     1. hyperv
     2. parallels
     3. virtualbox - choose this if you have VirtualMachine Box
     4. vmware_desktop
-    
-    continue the installation process as mentioned above
+
 ```
 
