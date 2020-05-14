@@ -15,4 +15,4 @@ alisas
 worker.txt
 yarn-error.txt
 /.git_heroku
-/.vagrant
+.vagrant/
