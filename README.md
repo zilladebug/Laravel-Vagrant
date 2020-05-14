@@ -40,7 +40,7 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 
 - Run both `vagrant up` and `vagrant ssh`
 - Pass this `http://homestead.test/` in your browser and see if it worked!
-    The name of the path is visible in the Homestead.yaml file at `map: homestead.test`
+    <br/>The name of the path is visible in the Homestead.yaml file at `map: homestead.test`
 
 ## First time running Homestead - CHOOSE A VIRTUAL MACHINE 
 - Choose one of these options:
