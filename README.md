@@ -72,9 +72,10 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 - Run GitBash and your virtual machine as administrator
 
     ```
-    <b>Npm install wont work<b>: use this npm install --no-bin-links and also npm install --save-dev cross-env
-    
-    <b>Npm dev error<b>:
+    | Npm install wont work: 
+            use this command npm install --no-bin-links and also npm install --save-dev cross-env
+            
+    | Npm dev error:
         Replace package.json with: https://github.com/laravel/laravel/blob/master/package.json
             Step1: composer update
             Step2: rm -rf node_modules
@@ -84,13 +85,13 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
             Step6: npm install
             Step7: npm run dev
             
-    <b>Missing laravel/ui:<b> 
+    | Missing laravel/ui: 
             composer require laravel/ui --dev
             php artisan ui vue --auth 
             npm install 
             npm run dev
             
-     <b>allround good practice<b>:
+     | Allround good practice:
             php artisan route:clear
 	        php artisan config:clear
 	        php artisan cache:clear
