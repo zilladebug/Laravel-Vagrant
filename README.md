@@ -8,7 +8,7 @@
 </p>
 
 :star:
-[Zilladebug](https://www.zilladebug) A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
+[Zilladebug] <br/>(https://www.zilladebug) <br/>A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. 
     Incl: email verification, login system, user authentication, 
     image upload on a reservation, service providers, MailGun
@@ -17,7 +17,7 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
 
 Vagrant | https://www.vagrantup.com/downloads.html <br/>
 Virtual Machine Box | https://www.virtualbox.org/wiki/Downloads <br/>
-    - Those are required to run Homestead
+    - Those are required to run Homestead <br/>
 GitBash | https://git-scm.com/download/win <br/>
 
 ## INSTALLING HOMESTEAD BOX 
