@@ -7,8 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## HOTEL RESERVATION DEMO
 :star:
-[Zilladebug] <br/><br/> A Laravel v6, hotel reservation demo system. Including CRUD and Laravel Eloquent. 
+[Zilladebug] <br/><br/> A Laravel v6, hotel reservation demo system. Including <b>CRUD</b> and <b>Laravel Eloquent.</b> 
 Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying our app on a test server. <br/>
 <br/>
     <b>Includes:</b> email verification, login system, user authentication,
