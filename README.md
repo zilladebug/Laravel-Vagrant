@@ -53,4 +53,19 @@ Also supports the use of Heroku [https://dashboard.heroku.com/] for deploying ou
     4. vmware_desktop
 
 ```
+## CLONING THE REPO
+- Delete the `.vagrant folder` in this repo
+- Edit the file `Homestead.yaml` to the correct file path.
+    Example: (map: C:\xampp\htdocs\janedoe)
+- If needed, edit the machine name and host, at the bottom of the file:<br/>
+    ```
+    name: [name of machine]
+    hostname: [name of host]
+    
+    ```
+    - This will also prevent it, from running on previously installed homestead machines.
+
+- Run both `vagrant up` and `vagrant ssh`
+- Pass this `http://homestead.test/` in your browser and see if it worked!   
+
 
